@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to left, rgb(11, 170, 72), rgb(151, 210, 224)) no-repeat;
+    background-image: url(https://scontent.fcgb7-1.fna.fbcdn.net/v/t39.30808-6/341283322_2670908096384815_6729575313207752789_n.jpg?stp=dst-jpg_p720x720&_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeFu2LQGPVB8RakTq_3ikA7HCE0x9igigpEITTH2KCKCkcu9tRK5BRcN3toKSKVpF4lbJdRKPEiKcQbdRhUuTJ-O&_nc_ohc=hMn47i0NsgEQ7kNvgFouBdj&_nc_ht=scontent.fcgb7-1.fna&oh=00_AYDobUF4UotEVBgjCcv34VqOGqHLNDCzCQI-UiY16gYCYg&oe=66B838EF);
+    background-position: center center ;
+    background-size: cover;
+    
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.418);
+    border: solid white;
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Centraliza o texto dentro do container */
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+}
+
+button {
+    background-color: #0eb114;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto; /* Centraliza o botão na horizontal */
+    display: block; /* Ocupa toda a largura disponível */
+    animation-name: bottom;
+    animation-duration: 1s;
+}
+
+button:hover {
+    background-color: #4CAF50;
+}
+/* Animação etc */
+@keyframes bottom {
+0%,
+100% {
+-webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+-webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+10% {
+-webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+20%,
+40%,
+60% {
+-webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+30%,
+50%,
+70% {
+-webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+80% {
+-webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+90% {
+-webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+}
+

@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #005724, #024b20);
+    align-items: center;
+}
+
+header {
+    background-color: #188a09;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+    
+}
+a.read-more
+{
+    background: linear-gradient(to right, #000000, #000000);
+    border-radius: 20px;
+    padding: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: help;
+
+}
+a.read-more:hover
+{
+    background: linear-gradient(to right, #000000, #000000);
+    animation-name: botaomudando;
+    animation-duration: 2s;
+
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    image-resolution: auto;
+}
+
+main {
+    display: fixed;
+    flex-wrap: none;
+    justify-content: center;
+    padding: 20px;
+    flex-flow: column wrap;
+}
+
+.highlight {
+    background: linear-gradient(to right, #02cf5e, #02cf5e);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    animation-name: paracentro;
+    animation-duration: 4s;
+    border-radius: 20px;
+}
+
+.highlight2 {
+    background: linear-gradient(to right, #02cf5e, #02cf5e);
+    max-width: 800px;
+    max-height: 800px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: paradireita;
+    animation-duration: 5s;
+    border-radius: 20px;
+    align-items: center;
+
+}
+
+.highlight2 article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.highlight h2 {
+    margin-top: 0;
+}
+
+
+.highlight2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: auto;
+    margin-bottom: 20px;
+}
+
+.highlight h2 {
+    margin-top: center;
+}
+
+.highlight article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlight img {
+    width: 100%;
+    height: 200px;
+    object-fit: none;
+    margin-bottom: 20px;
+}
+
+/* Parte de Animaçao nao mexer */
+@keyframes paracentro {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes paradireita {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(10000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes botaomudando {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }

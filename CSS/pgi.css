@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, rgb(134, 197, 158), rgb(16, 139, 0));
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .container2 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+  }  
+   .noticia2 {
+    background: linear-gradient(to left, black, rgb(0, 0, 0));
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: -10px 5px 10px rgb(8, 73, 212);
+    padding: 20px;
+    margin-top: 20px;
+    animation-name: right;
+    animation-duration: 5s;
+  }
+  .noticia {
+    background: linear-gradient(to left, black, rgb(0, 0, 0));
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: -10px 5px 10px rgb(8, 73, 212);
+    padding: 20px;
+    margin-top: 20px;
+    animation-name: left ;
+    animation-duration: 5s;
+  }
+  .topico1 {
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    border: 3px solid ;
+    border-radius: 10px;
+    margin-right: 15px;
+    max-width: 35vh;
+    border-color: white;
+  }
+
+  footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 0%;
+  }
+
+   a {
+   color: #fff;
+   text-decoration: none;
+   font: arial;
+
+    }
+    /* Animaçao etc */
+    @keyframes right {
+0% {
+  -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+}
+100% {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+}
+@keyframes left {
+0% {
+  -webkit-transform: translateX(1000px);
+          transform: translateX(1000px);
+}
+100% {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+}
